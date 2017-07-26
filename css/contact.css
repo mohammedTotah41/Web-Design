@@ -1,0 +1,263 @@
+body{
+    padding-top: 70px ;
+    overflow: hidden;
+}
+h1 , h2, h3 ,h4 , h5{font-family: 'Droid Sans', sans-serif;}
+.product{
+    padding: 10px ;
+    background: #333 ;
+    color: #FFF ;
+    margin-bottom: 10px ;
+    min-height: 100px ;
+}
+.img-responsive{margin: auto ;}
+/*Start Section tool box*/
+/*Start Section tool box*/
+/*Main navbar*/
+.navbar{min-height: 10px ;}
+/* Navbar link*/
+.navbar-inverse .navbar-nav > li > a { 
+    color :#BBB;
+    padding-top: 25px ;
+    padding-bottom: 25px ;
+    font-size: 16px ;
+    
+}
+.nav .ul{
+    font-weight: 700;
+}
+
+/* Brand name*/
+
+.navbar-brand
+{
+    color :#BBB;
+    line-height: 40px ;
+    font-size: 30px ;
+
+}
+/* Dropdown menu*/
+
+.navbar-nav > li > .dropdown-menu
+{
+    background-color: #333 ;
+    min-width: 200px ;
+    left: 0px ;
+    right: auto;
+
+} 
+
+/* Dropdown menu*/
+.dropdown-menu > li > a
+{
+    color: #FFF ;
+    padding: 6px 20px ;
+}
+
+/* Dropdown hover - focus*/
+.dropdown-menu > li > a:hover,
+ .dropdown-menu > li > a:focus{color :#FFF;
+    padding-left: 25px ;} 
+
+ /*Divider*/
+ .dropdown-menu .divider{background-color: #871818 ;}
+/*Navebar Toggle*/
+.navbar-toggle{margin-top: 18px ;}
+
+.navbar-right > a {
+    color: #ef4e54;
+}
+/*Start Default theme*/
+.navbar-right .navbar-brand {
+    color: #ef4e54;
+}
+.navbar-right .navbar-brand:hover{
+    color: #ef4e54;
+}
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover,
+ .navbar-inverse .navbar-nav > .active > a:focus, 
+ .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+  .carousel-indicators .active, .optionBox .gear-check {
+    background-color: #EF4E54;
+}
+ /* End Nave*/
+.social img:hover{opacity: 1;   }
+/*Start Section Footer*/
+.footer{background: #333;color: #AAA;padding-top: 10px;}
+.footer a:hover{color:#FFF;}
+.footer h3{color: #E41B17;letter-spacing: 1px;margin: 30px 0 20px;}
+.footer .threeCol {overflow: hidden;}
+.footer .threeCol li {width: 33.3333%;float: left;padding: 5px 0;}
+.footer .social{overflow: hidden;margin: 20px 0 10px;}
+.footer .social li{
+    float: left;
+    margin-right: 3px;
+    opacity: 0.3 ;
+    filter:alpha(opacity=40);
+}
+.footer .social li:hover{opacity: 1;    }
+.footer .img-thumbnail {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid #666;
+    margin: 5px;
+}
+.footer .copy {
+    background: #111; 
+    color: #AAA;
+    padding: 15px 0;
+    margin-left: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+/*End Section Footer*/
+
+/*Start Sectionloading*/
+
+.over{
+    background: #000;
+    color: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index:99999;
+}
+/*Start Section loading*/
+.spinner{
+    text-align: center;
+    margin-top: 250px;
+}
+/*Start Section scroll to top*/
+#scroll-top{
+    width: 50px;
+    height: 40px;
+    padding: 5px 8px;
+    color: #DDD;
+    background-color: #777;
+    text-align: center;
+    padding: 0;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+}
+/*Start Section scroll to top*/
+/**start our grouping*/
+.contactUs , .statistics , .ourTeam {
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+.features .h1 , .testimonial .h1 , .priceTable .h1 ,
+.ourTeam .h1 , .statistics .h1 ,.ourSkills .h1{font-weight: bold; margin-bottom: 50px;}
+.footer .social li ,.social img,.ourClients img ,.statistics .stats ,
+.priceTable .priceBox p ,.testimonial .carousel-indicators li ,
+.dropdown-menu > li > a
+{
+    -webkit-transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+/**end our grouping*/
+/* Startmobile and tablets(0 - mobile)*/
+@media (max-width: 767px){
+    .navbar-inverse .navbar-nav > li > a{
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .subscribe .form-control{
+        margin: 20px auto;
+        width: 400px;
+    }
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{
+        max-height: none;
+    }
+ }
+/* Startmobile and tablets(0 - mobile)*/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+.margin-top-20{
+  margin-top: 20px;
+}
+
+.social{overflow: hidden;margin: 12px 0 2px;}
+.social img{
+    float: left;
+    margin-right: 3px;
+    opacity: 0.3 ;
+    filter:alpha(opacity=40);
+}
+.social img:hover{opacity: 1;   }
+
+
+
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  border: 1px solid GREY;
+  }
+  /*...........................................................................................*/
+
+  
