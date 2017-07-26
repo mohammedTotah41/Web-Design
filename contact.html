@@ -1,0 +1,383 @@
+
+
+<!doctype html>
+
+<html lang="en">
+<head>
+     <meta charset="UTF_8">
+        <!-- internet explorer -->
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- first mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>bootstrap</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" media="screen">  
+        <!-- <link href="css/default-theme.css" rel="stylesheet" media="screen">  -->
+        <link href="css/hover.css" rel="stylesheet" media="screen"/>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' >
+         <link href="css/animate.css" rel="stylesheet" media="screen"/>
+      <script src="js/html5shiv.min.js"></script>
+     <script src="js/respond.min.js"></script>
+     
+      <script src="js/html5shiv.min.js"></script>
+     <script src="js/respond.min.js"></script>
+     <script src="js/login.js"></script>
+</head>
+<body style="direction:rtl;">
+
+
+
+  <!--Start Section Tool Box -->
+  <!-- start nav-->
+  <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+   
+
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header navbar-right">
+      <button type="button" class="navbar-toggle collapsed navbar-right" data-toggle="collapse" data-target="#ournavbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img  src="Images/benoLogo.png" style="width :70px ; height :69px;" >
+      <a class="navbar-brand" href="beno tech.html">بينوتك<span></span></a>
+    </div>
+
+
+    <!-- Collect the nav links, forms , and other content for toggling -->
+    <div class="collapse navbar-collapse " id="ournavbar" style="margin-right: 100px;">
+      <ul class="nav navbar-nav" style=" font-weight: 700;">
+         
+         
+
+         <li class="dropdown" style=" margin-right: 150px;"> 
+          <i class="fa fa-user userloginIcon" ></i>
+           <a class="dropdown-toggle" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">
+            <b>دخول / تسجيل</b> <span class="caret"
+            style="float: left; margin-top: 9px; margin-left: -14px;"></span></a>
+
+  
+
+<!-- Modal -->
+<div class="modal fade bs-modal-sm active" id="myModal" tabindex="-1" role="dialog"
+ aria-labelledby="mySmallModalLabel" aria-hidden="true" style="direction:rtl;">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs" >
+              <li class=""><a href="#why" data-toggle="tab">لماذا ؟</a></li>
+              <li class=""><a href="#signup" data-toggle="tab">عمل حساب</a></li>  
+              <li class="active"><a href="#signin" data-toggle="tab">تسجيل الدخول</a></li>
+            </ul>
+        </div>
+      <div class="modal-body" style="margin: 13px;">
+        <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in" id="why">
+        <p>عليك تسجيل الدخول الى الموقع لكى تتمتع بكل الصلاحيات المتاحه والحصول على اى منتج او الاستفسار عن اى تساؤلات حول منتجاتنا .. وللامان لا يتم بيع بياناتك الى اى جهة تجاريه او غيرها فى اى من الاحوال ولا استفسار نرجو زيارة موقعنا على فيسبوك  <a
+           href="https://www.facebook.com/Beno.Tech.2016/?ref=aymt_homepage_panel" >بينو تك</a></p>
+        </div>
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group" >
+              <label class="control-label" for="userid">اسم السمتخدم :</label>
+              <div class="controls">
+                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="محمد احمد" class="input-medium" required="">
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">الرقم السرى :</label>
+              <div class="controls">
+                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+              </div>
+            </div>
+
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="control-group" style="margin-left: 20px;">
+              <label class="control-label" for="rememberme"></label>
+              <div class="controls">
+                <label class="checkbox inline" for="rememberme-0">
+                </label>
+                 <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                  ابق متصلا
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signin" name="signin" class="btn btn-success">تسجيل الدخول</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="signup">
+            <form class="form-horizontal">
+            <fieldset>
+            <!-- Sign Up Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="Email">ايميل:</label>
+              <div class="controls">
+                <input id="Email" name="Email" class="form-control" type="text" placeholder="mohammed@asda.com" class="input-large" required="">
+              </div>
+            </div>
+    
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">اسم المستخدم :</label>
+              <div class="controls">
+                <input id="userid" name="userid" class="form-control" type="text" placeholder="محمد احمد" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Password input-->
+            <div class="control-group">
+              <label class="control-label" for="password">الرقم السرى :</label>
+              <div class="controls">
+                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                <em>1-8 حرف </em>
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="reenterpassword">اعد ادخال الرقم السرى:</label>
+              <div class="controls">
+                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+              </div>
+            </div>
+            
+            <!-- Multiple Radios (inline) -->
+            <br>
+            <div class="control-group" style="margin-left: 20px;">
+              <label class="control-label" for="humancheck">التاكد من هويتك :</label>
+              <div class="controls">
+                <label class="radio inline" for="humancheck-0">
+                  </label>
+                  <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">انا لست انسان 
+                <label class="radio inline" for="humancheck-1"></label>
+                  <input type="radio" name="humancheck" id="humancheck-1" value="human">انا انسان
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="confirmsignup"></label>
+              <div class="controls">
+                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">تسجيل الدخول</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+      </div>
+      <div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+        </li>
+  <li class="search-form"> 
+
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control-search" placeholder="Search" name="q" >
+                    <div class="input-group-btn">
+                        <button class="btn-default-mo btn btn-default " type="submit"><i class="glyphicon glyphicon-search" >
+                         </i></button>
+                        
+                    </div>
+                </div>
+            </form>     
+         </li>
+         
+<!--
+                <li class="social" >
+                  <img  onclick='window.location.href="https://www.facebook.com/Beno.Tech.2016/?ref=aymt_homepage_panel"' src="Images/mmm/f.png" alt"facebook">
+                </li>
+                <li class="social">
+                  <img  onclick='window.location.href="https://www.facebook.com/Beno.Tech.2016/?ref=aymt_homepage_panel"' src="Images/mmm/in.png" alt"Linked in">
+                </li>
+                <li class="social" style="margin-right: 82px;">
+                  <img  onclick='window.location.href="https://www.facebook.com/Beno.Tech.2016/?ref=aymt_homepage_panel"' src="Images/mmm/y.png" alt"youtube">
+                </li>-->
+         <li><a href="#prices">الاسعار</a></li>
+         <li><a href="contact.html">اتصل بنا</a></li>     
+        <li><a href="#opinions">اراء عملائنا</a></li>
+        <li><a href="videos.html">فيديو</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">منتجاتنا <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="projects.html">برامج محاسبه</a></li>
+            <li><a href="projects.html">تطبيقات موبايل</a></li>
+            <li><a href="projects.html">مواقع</a></li>
+            <li class="divider"></li>
+            <li><a href="projects.html">عرض الكل</a></li>     
+          </ul>
+        </li>
+        <li><a href="offers.html">العـروض</a></li>
+        <li class="active"><a href="beno tech.html">الرئيسية</a></li> 
+        </li>  
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!-- end of navbar-->
+<div class="container">
+<div class="col-md-5" style="margin-left: 29%; direction: rtl; color: blue;">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+        <ul class="list-inline" style="margin-right: 81px;">
+              <li class="social" >
+                  <img  onclick='window.location.href="https://www.facebook.com/Beno.Tech.2016/?ref=aymt_homepage_panel"' src="Images/mmm/fa.png" alt"facebook">
+                </li>
+                <li class="social">
+                  <img  onclick='window.location.href="https://www.facebook.com/Beno.Tech.2016/?ref=aymt_homepage_panel"' src="Images/mmm/in.png" alt"Linked in">
+                </li>
+                <li class="social" >
+                  <img  onclick='window.location.href="https://www.facebook.com/Beno.Tech.2016/?ref=aymt_homepage_panel"' src="Images/mmm/y.png" alt"youtube">
+                </li>
+        </ul>
+                    <h3 style="margin-bottom: 25px; text-align: center;">تواصل معنا</h3>
+            <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="الاسم" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="email" name="email" placeholder="الايميل" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="رقم الموبايل" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="الموضوع" required>
+          </div>
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea" id="message" placeholder="الرسالة" maxlength="140" rows="7"></textarea>                  
+                    </div>
+            
+        <button type="button" id="submit" name="submit" class="btn btn-danger pull-right" style="margin-bottom: 12px;
+        margin-right: 45%;width: 79px;">ارسال</button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+<!--Start Section Footer-->
+      <section class="footer wow rotateInUpLeft " data-wow-duration="2s" data-wow-offset="200">
+        <div class="container hvr-hang">
+          <div class="row">
+            <div class="col-lg-4 col-md-6"> 
+              <h3>خريطة الموقع</h3>
+              <ul class="threeCol list-unstyled">
+                <li>عن الشركة</li>
+                <li>خدمات</li>
+                <li>الرئيسية</li>
+                <li>شركتنا</li>
+                <li>كود</li>
+                <li>تصميمات</li>
+                <li>هوست</li>
+                <li>حلول</li>
+                <li>الخريطه الينا</li>
+              </ul>
+              <ul class="social list-unstyled">
+                <li><img src="Images/mmm/fa.png" alt"facebook"></li>
+                <li><img src="Images/mmm/tw.png" alt"facebook"></li>
+                <li><img src="Images/mmm/gp.png" alt"facebook"></li>
+                <li><img src="Images/mmm/in.png" alt"facebook"></li>
+                <li><img src="Images/mmm/s.png" alt"facebook"></li>
+                <li><img src="Images/mmm/y.png" alt"facebook"></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h3>اخر المقالات</h3>
+                <div class="media">
+                  <a class="pull-left" href="#">
+                  <img class="media-object" src="Images/art/1.png"/>
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-headding">برمج محاسبيه</h4>
+                   هذا مقال عن اهم اهدافنا لطرق صيانة وتعديل برمجنا فى سوق العمل
+                  </div>
+                </div>
+
+                 <div class="media">
+                  <a class="pull-left" href="#">
+                  <img class="media-object" src="Images/art/2.png"/>
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-headding">تطبيقات الموبايل </h4>
+                   هذا مقال عن اهم اهدافنا لطرق صيانة وتعديل تطبيقات الاندرويد فى سوق العمل
+                  </div>
+                </div>
+
+                 <div class="media">
+                  <a class="pull-left" href="#">
+                  <img class="media-object" src="Images/art/3.png"/>
+                  </a>
+                  <div class="media-body">
+                    <h4 class="media-headding">مواقع</h4>
+                   هذا مقال عن اهم اهدافنا لطرق صيانة وتعديل المواقع فى سوق العمل
+                  </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4"> 
+              <h3>اروع اعمالنا</h3>
+              <img  class="img-thumbnail" src="Images/art/001.png"/>
+              <img  class="img-thumbnail" src="Images/art/002.png"/>
+              <img  class="img-thumbnail" src="Images/art/003.png"/>
+              <img  class="img-thumbnail" src="Images/art/004.png"/>
+            </div>
+          </div>       
+        </div>
+        <div class="copy text-center">
+          حقوق النشر والتوزيع &copy <span>بينوتك </span>
+          </div>
+      </section>
+     <!--End Section Footer-->
+      <!--Start Section loading-->
+      <section class="over">
+       <div class="spinner">
+        <img src="Images/spin.gif" >      
+       </div>
+      </section>
+      <!--End Section loading-->
+
+      <!--Start Section scroll to top-->
+      <div id="scroll-top">
+        <i class="fa fa-chevron-up fa-3x"></i>
+      </div>
+
+
+
+ <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/jquery.nicescroll.min.js"></script>
+     <script> new WOW().init(); </script>
+     <script src="js/login.js"></script>
+</body>
+</html>
