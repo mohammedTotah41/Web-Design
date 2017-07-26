@@ -1,0 +1,64 @@
+/****Start Default theme*/
+
+/* Active link */
+.navbar,
+.navbar-inverse .navbar-nav > .active > a,
+ .navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus,
+.dropdown-menu > li > a:hover,
+ .dropdown-menu > li > a:focus,.carousel-indicators .active,
+ .optionBox .gear-check
+
+{
+	background-color: #0F5081;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+	/*color:#FF5C5C;*/
+	background: rgb(65, 70, 165) none repeat scroll 0% 0%;
+}
+.navbar-inverse .navbar-nav > .navbar-brand > a{
+	color:#FF5C5C;
+}
+.navbar-inverse .navbar-brand span ,.about h1 span ,
+.features .feat span.glyphicon,.testimonial span,.testimonial span,
+/*.footer a:hover,.footer h3,.footer .copy span*/
+
+{
+	color: rgb(65, 70, 165);
+}
+.navbar-nav > li > .dropdown-menu,
+/**/
+{
+	border-top: 3px solid #746BC7; 
+}
+.navbar-nav > li > .dropdown-menu .divider{
+	background: #0f5081;
+} 
+.testimonial .carousel-indicators li.active ,
+.optionBox .color-option{
+	border: 3px solid #746BC7; 
+}
+.form-control-search {
+background-color: rgb(65, 70, 165);
+color: rgb(228, 228, 228);
+}
+.btn-default-mo{
+	background: rgb(15, 80, 129) none repeat scroll 0% 0%;
+	color: rgb(141, 143, 187);
+	font-size: 18px;
+}
+.btn-default-mo:hover{
+	background: rgb(15, 80, 129) none repeat scroll 0% 0%;
+	color: white;
+}
+.navbar-right > a {
+    color: #ef4e54;
+}
+/*Start Default theme*/
+.navbar-right .navbar-brand {
+    color: #ef4e54;
+}
+.navbar-right .navbar-brand:hover{
+    color: #ef4e54;
+}
